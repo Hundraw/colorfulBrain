@@ -18,3 +18,16 @@ Today, I think it's not very beautiful, but I wanted to share it.
 1. The code is not commented.
 2. It's developed only in procedural programming.
 3. It's a mess in the .css file
+4. 
+### Rules :
+- The goal of the game is to find a 4-color code in 12 moves.
+
+- If one of the pieces corresponds by its position and its color to a hidden piece, the game indicates it with a green mark on the right side of the decoding attempt.
+
+- If one of the pieces matches only by color, the game indicates this with a red mark.
+
+- If there is no match, it does not mark anything.
+
+- The order of the marks is not important and does not correspond to the position of the colors.
+
+- The same color cannot appear twice in the code.
