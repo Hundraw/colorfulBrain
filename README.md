@@ -20,7 +20,7 @@ Today, I think it's not very beautiful, but I wanted to share it.
 3. It's a mess in the .css file
 4. 
 ### Rules :
-- The goal of the game is to find a 4-color code in 12 moves.
+- The goal of the game is to find a 4-color code ~~in 12 moves~~.
 
 - If one of the pieces corresponds by its position and its color to a hidden piece, the game indicates it with a green mark on the right side of the decoding attempt.
 
