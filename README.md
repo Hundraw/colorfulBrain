@@ -1,6 +1,6 @@
 # colorfulBrain
 A web version of the popular game MasterMind.<br />
-<img alt="HTML" src="img/colorfulBrain-main.png" width=350px align="center"/><br />
+<img alt="HTML" src="img/colorfulBrain-main.png"/><br />
 
 ### Why did I do it ?
 I did it because it's one of my first javascript exercises, it needs to be refactored and finished, but I'm proud of it because "nostalgia" is getting to me I guess.
