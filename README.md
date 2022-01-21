@@ -1,5 +1,5 @@
 # colorfulBrain
-A web version of the popular game MasterMind.
+A web version of the popular game MasterMind.<br />
 <img alt="HTML" src="img/colorfulBrain-main.png" width=350px align="center"/><br />
 
 ### Why did I do it ?
