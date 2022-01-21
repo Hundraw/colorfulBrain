@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>colorfulBrain</title>
+</head>
+<body>
+
+    <main>
+        <div a>
+            <aside class="container attempts-box">
+                <h2 class="section-name">attempts</h2>
+                <div class="content attempts"></div>
+            </aside>
+        </div>
+        <div b>
+            <section class="container app-box">
+                <h1 class="section-name">colorfulBrain</h1>
+                <div class="content app">
+                    <div class="viewer">
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="btns">
+                        <div class="colors-btn">
+                            <button class="cbtn yellow"></button>
+                            <button class="cbtn blue"></button>
+                            <button class="cbtn red"></button>
+                            <button class="cbtn green"></button>
+                            <button class="cbtn white"></button>
+                            <button class="cbtn pink"></button>
+                        </div>
+                        <div class="actions-btn">
+                            <button class="abtn submit">VALIDER</button>
+                            <button class="abtn delete">CORRIGER</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        
+        <div c>
+            <aside class="container rules-box">
+                <h2 class="section-name">rules</h2>
+                <div class="content rules">
+                    <p>
+                        Le but du jeu est de trouver un code de 4 couleurs en 12 coups.
+                        <br /><br />
+                        Si l'un des pions correspond par sa position et sa couleur à un pion caché,
+                        le jeu l'indique d'une marque verte sur le coté droit de la tentative de décodage.
+                        <br /><br />
+                        Si l'un des pions correspond uniquement par sa couleur, 
+                        le jeu l'indique par une marque rouge.
+                        <br /><br />
+                        S'il n'y a aucune correspondance, il ne marque rien. 
+                        <br /><br />
+                        L'ordre des marques n'a pas d'importance et ne correspond pas à la position des couleurs.
+                        <br /><br />
+                        Il ne peut pas y avoir deux fois la même couleur dans le code.
+                    </p>
+                </div>
+            </aside>
+        </div>
+        <div class="end-screen">
+            
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>

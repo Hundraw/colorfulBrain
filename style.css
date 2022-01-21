@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Spartan;
+    src: url('fonts/Spartan-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #f1f1f1;
+    font-family: Spartan;
+
+    overflow: hidden;
+
+    --twitch-dark-purple: #240a33;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    overflow: hidden;
+
+    background: var(--twitch-dark-purple);
+}
+
+main > * {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+    height: 80%;
+    max-width: 400px;
+    min-width: 300px;
+
+    padding: 20px;
+
+    align-self: center;
+    justify-self: center;
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
+
+    border-radius: 20px;
+    background: #240a33;
+    box-shadow:  30px 30px 59px #1f092b,
+                -30px -30px 59px #290c3b;
+    
+}
+.app-box {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border-radius: none;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    overflow: unset;
+}
+
+.section-name {
+    position: relative;
+    z-index: 10;
+}
+
+.content {
+    height: 100%;
+
+    overflow: scroll;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    overflow: unset;
+
+    padding: 10px;
+    
+    border-radius: 20px;
+    background: #240a33;
+    box-shadow:  30px 30px 59px #1f092b,
+                -30px -30px 59px #290c3b;
+}
+
+.attempt-component {
+    height: 60px;
+
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 10px;
+    
+    background: #411b5a;
+
+    border-radius: 10px;
+}
+
+.attempt-component .dots {
+    display: flex;
+    gap: 5px;
+    flex: 1;
+    justify-content: center;
+}
+
+.attempt-component .dot {
+    height: 40px;
+    width: 40px;
+}
+
+.marks {
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-content: center;
+    justify-content: center;
+
+    background: #703b94;
+
+    border-radius: 8px;
+    border: none;
+}
+
+.viewer, .btns {
+    overflow: unset;
+    width: 100%;
+
+    padding: 10px 0px 10px 0px;
+
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+
+    border-radius: 15px;
+
+    background-color: #411b5a;
+}
+
+.dots {
+    display: grid;
+    grid-template: 60px / 60px 60px 60px 60px;
+
+    
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+
+    justify-self: center;
+    align-self: center;
+
+    border-radius: 50%;
+    
+    
+    background: #1d0a29;
+}
+
+.mark {
+    height: 15px;
+    width: 15px;
+
+    justify-self: center;
+    align-self: center;
+
+    border-radius: 50%;
+
+    background: #1d0a29;
+}
+
+.colors-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cbtn {
+    width: 30px;
+    height: 30px;
+
+    margin: 5px;
+
+    outline: none;
+    border: none;
+
+    border-radius: 10px;
+}
+
+.actions-btn {
+    overflow: unset;
+    width: 80%;
+    
+    margin-top: 10px;
+    
+    display: grid;
+    grid-template:30px / 1fr 1fr;
+    gap: 10px;
+}
+.submit, .delete, .continue-btn, .quit-btn {
+    border: none;
+    border-radius: 10px;
+    
+    color: black;
+    font-weight: bold;
+}
+.submit {
+    background: #af69dd;
+    box-shadow: 0px 4px 0px #290c3b;
+}
+
+.delete {
+    background: #dd6969;
+    box-shadow: 0px 4px 0px #3b0c0c;
+}
+
+.yellow {
+    background: #e9de44;
+}
+.green {
+    background: #51e944;
+}
+.blue {
+    background: #44d0e9;
+}
+.red {
+    background: #e94444;
+}
+.pink {
+    background: #e944e1;
+}
+.white {
+    background: #e0dad3;
+}
+
+.mark-pos-good {
+    background: #308f0b;
+}
+.mark-good {
+    background : #8f0b0b;
+}
+
+.end-screen {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--twitch-dark-purple);
+
+    visibility: hidden;
+
+    z-index: 20;
+}
+.end-screen > * {
+    width: 300px;
+    height: auto;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border-radius: 15px;
+
+    background-color: #411b5a;
+}
+.end-screen > * h3 {
+    flex: 1 1 1;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        grid-template-columns: 100vw 100vw 100vw;
+    }
+    div[b] {
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
