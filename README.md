@@ -28,6 +28,6 @@ Today, I think it's not very beautiful, but I wanted to share it.
 
 - If there is no match, it does not mark anything.
 
-- The order of the marks is not important and does not correspond to the position of the colors.
+- The __**order**__ of the marks __**is not important**__ and does not correspond to the position of the colors.
 
 - The same color cannot appear twice in the code.
